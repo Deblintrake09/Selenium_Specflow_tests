@@ -8,8 +8,8 @@ using TechTalk.SpecFlow;
 
 namespace SpecFlow_OnlineBank.Specs.StepDefinitions
 {
-    [Scope(Tag = "userinterface")]
     [Binding]
+    [Scope(Tag = "userinterface")]
     public class LoanApplicationStepDefinitions
     {
 
@@ -21,6 +21,8 @@ namespace SpecFlow_OnlineBank.Specs.StepDefinitions
             
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--headless=new");
+
+
             this.driver = new ChromeDriver(options);
             this.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             //this.driver.Manage().Window.Maximize();

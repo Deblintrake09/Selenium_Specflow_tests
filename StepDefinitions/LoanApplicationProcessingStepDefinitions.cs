@@ -1,6 +1,4 @@
 using SpecFlow_OnlineBank.Specs.Models;
-using System;
-using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
 namespace SpecFlow_OnlineBank.Specs.StepDefinitions
