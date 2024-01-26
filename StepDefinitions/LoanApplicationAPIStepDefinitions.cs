@@ -20,7 +20,7 @@ namespace SpecFlow_OnlineBank.Specs.StepDefinitions
         public void CreateRequestSpecification()
         {
             this.requestSpecification = new RequestSpecBuilder()
-                .WithHostName("www.parabank.parasoft.com")
+                .WithBaseUri("www.parabank.parasoft.com")
                 .WithBasePath("/parabank/services/bank")
                 .WithPort(8080)
                 .WithHeader("Accept", "application/json")
